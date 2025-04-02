@@ -34,9 +34,17 @@
 4. gitHub 저장소 생성 후 저장소 주소 복사
 5. 현재 로컬 저장소 gitHub 저장소 연결 `git remote add origin 주소 붙여넣기`
 6. `git status` 현재 상태 확인 (스테이징, 작업 드렉터리, 저장소)
-7. 위 6번 결과 파일이 빨간색으로 출력될 경우 `git add 파일명`
+7. 위 6번 결과 파일이 빨간색으로 출력될 경우 `git add 파일명.확장자`
 8. `git status` 위 7번에서 올린 파일이 초록색으로 변경된 걸 확인
 9. `git commit -m '기록 메시지'` 스테이징 파일을 저장소에 올리기 위한 기록 설정
 10. `git push origin main` 깃허브 저장소에 최종 파일, 폴더 업로드
 11. 위 10번 처음 진행 시 깃허브 계정 인증 화면 나오니 인증 진행 후 저장소 F5
-12. 
+----
+## 다른 환경에서 이어서 작업해야 하는 경우
+1. 폴더 생성하기 -> vs code 폴더 연결
+2. gitHub 저장소 주소 복사
+3. vs code에서 `ctrl + j` 터미널 실행 후 bash 환경 변경 
+4. `git clone 저장소 주소 붙여넣기`
+5. 터미널 경로 오른쪽에 `main` 또는 `masrter` 표시 확인
+6. 위 5번이 표시 없으면 `cd + 복제한 폴더명` 입력
+7. 자유롭게 수정 후 `git status` -> `git add 파일명.확장자` -> `git status` -> `git commit -m '기록 메시지'` -> `git push origin main`
