@@ -47,4 +47,9 @@
 4. `git clone 저장소 주소 붙여넣기`
 5. 터미널 경로 오른쪽에 `main` 또는 `masrter` 표시 확인
 6. 위 5번이 표시 없으면 `cd + 복제한 폴더명` 입력
-7. 자유롭게 수정 후 `git status` -> `git add 파일명.확장자` -> `git status` -> `git commit -m '기록 메시지'` -> `git push origin main`
+7. 자유롭게 수정 후 파일 저장
+8. 터미널에 `git status` 업로드 안 된 파일 빨간색 확인 
+9. `git add 파일명.확장자` 수정한 파일 스테이지에 업로드
+10. `git status` 위 9번 업로드 됐는지 확인, 녹색
+11. `git commit -m '기록 메시지'` 수정 파일에 대한 기록 메시지 작성
+12. `git push origin main` 깃허브 저장소에 업로드
